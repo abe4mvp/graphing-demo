@@ -1,0 +1,17 @@
+<%= column_chart Sentence.group(:created_at).count %>
+<br>
+
+<table>
+<% Sentence.group(:created_at).count.each do |key, value| %>
+	<tr>
+		<td>
+		<%= key %>
+		</td>
+		<td>
+			<%= value %>
+		</td>
+	</tr>
+<% end %>
+</table>
+
+<div id="sentences"></div>
