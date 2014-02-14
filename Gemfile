@@ -6,7 +6,7 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-
+gem 'pg', '~>0.17.0'
 gem "chartkick"
 gem 'groupdate'
 
@@ -25,7 +25,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'sqlite3'
+  
 end
 
 gem 'jquery-rails'

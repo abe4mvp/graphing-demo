@@ -1,8 +1,8 @@
-<%= column_chart Sentence.group(:created_at).count %>
+<%= column_chart Sentence.group_by_minute(:created_at).count %>
 <br>
 
 <table>
-<% Sentence.group(:created_at).count.each do |key, value| %>
+<% Sentence.group_by_minute(:created_at).count.each do |key, value| %>
 	<tr>
 		<td>
 		<%= key %>
