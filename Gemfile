@@ -7,7 +7,7 @@ gem 'rails', '3.2.14'
 
 
 gem 'pg', '~>0.17.0'
-gem "chartkick"
+gem 'chartkick'
 gem 'groupdate'
 
 # Gems used only for assets and not required

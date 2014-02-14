@@ -1,17 +1,25 @@
-<%= column_chart Sentence.group_by_minute(:created_at).count %>
-<br>
+<%= column_chart @sentences %>
+
 
 <table>
-<% Sentence.group_by_minute(:created_at).count.each do |key, value| %>
 	<tr>
-		<td>
-		<%= key %>
+			<td class="time" >Time</td>
+			<td class="value" ># Created</td>
+	</tr>
+	
+<% @sentences.each do |key, value| %>
+	<tr class="ajax" >
+		<td class="time">
+		<%= key.to_time %>
 		</td>
-		<td>
+		<td class="value">
 			<%= value %>
 		</td>
 	</tr>
 <% end %>
 </table>
 
-<div id="sentences"></div>
+
+<ul id="sentences">
+	<h3>Sentences created within the 1 minute time span will appear here when you click a row in the table</h3>
+</ul>

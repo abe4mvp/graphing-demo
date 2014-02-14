@@ -17,21 +17,53 @@
 }
 
 
-td {
+td{
 	border:1px solid black;
 	min-width:20px;
 	text-align:center;
+	
+	
+}
+
+.value {
+	width:100px;
+}
+
+.time {
+	width:200px;
+}
+
+th td {
+	padding:0px;
 }
 
 tr {
-	border:2px solid black;
+	display:block;
+	
+	width:100%;
+	
+		cursor:pointer;
+
+	
 }
+
+.ajax:hover {
+	color:red;
+}
+
+.ajax:active {
+	background:grey;
+}
+
+
 
 table {
 	float:left;
 	display:inline-block;
 	border:1px solid blue;
-	width:49%;
+
+	min-height:100px;
+	margin:10px;
 	
 }
 
@@ -39,6 +71,7 @@ table {
 	float:right;
 	display:inline-block;
 	border:1px solid red;
-	height:100px;
-	width:49%;
+	min-height:100px;
+	width:40%;
+	margin:10px;
 }
